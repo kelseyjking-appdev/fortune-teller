@@ -1,7 +1,7 @@
 Rails.application.routes.draw do  
   # PART 1: EACH IN ERB
   # ===================
-  get("/", { :controller => "numbers", :action => "winners" })
+  
   get("/lottery/lucky", { :controller => "numbers", :action => "winners" })
   get("/lottery/unlucky", { :controller => "numbers", :action => "losers" })
 
@@ -14,18 +14,15 @@ Rails.application.routes.draw do
   get("/zodiacs/aries", { :controller =>  "fire", :action => "ram" })
   get("/zodiacs/leo", { :controller => "fire", :action => "lion" })
   get("/zodiacs/sagittarius", { :controller => "fire", :action => "archer" })
-  
   get("/zodiacs/taurus", { :controller => "earth", :action => "bull" })
-  # get("/zodiacs/virgo", { :controller => "earth", :action => "maiden" })
-  # get("/zodiacs/capricorn", { :controller => "earth", :action => "goat" })
-  
-  # get("/zodiacs/gemini", { :controller => "air", :action => "twins" })
-  # get("/zodiacs/libra", { :controller => "air", :action => "scales" })
-  # get("/zodiacs/aquarius", { :controller => "air", :action => "waterbearer" })
-  
-  # get("/zodiacs/cancer", { :controller => "earth", :action => "crab" })
-  # get("/zodiacs/ scorpio", { :controller => "water", :action => "scorpion" })
-  # get("/zodiacs/pisces", { :controller => "water", :action => "fish " })
+  get("/zodiacs/virgo", { :controller => "earth", :action => "maiden" })
+  get("/zodiacs/capricorn", { :controller => "earth", :action => "goat" })
+  get("/zodiacs/gemini", { :controller => "air", :action => "twins" })
+  get("/zodiacs/libra", { :controller => "air", :action => "scales" })
+  get("/zodiacs/aquarius", { :controller => "air", :action => "waterbearer" })
+  get("/zodiacs/cancer", { :controller => "water", :action => "crab" })
+  get("/zodiacs/scorpio", { :controller => "water", :action => "scorpion" })
+  get("/zodiacs/pisces", { :controller => "water", :action => "fish" })
 
   # PART 3: MORE R→C→A→V PRACTICE
   # ==========================
